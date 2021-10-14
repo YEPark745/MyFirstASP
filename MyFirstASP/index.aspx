@@ -70,23 +70,20 @@
     <form id="form1" runat="server" class="auto-style9">
         <div>
 
-            <h1 class="auto-style1"> P I Z Z A - H U R T S</h1>
-
-        </div>
-      
-        <hr class="auto-style2"/>
+            <h1 class="auto-style1"> P I Z Z A - H U R T S </h1>
+         </div>
+        
+        <hr class="auto-style2" />
 
         <br />
 
         <table class="auto-style11">
             <tr style="vertical-align:top">
                 <td class="auto-style12">
-                    
                     <asp:Panel ID="panPizza" runat="server" CssClass="stylePanel" BackColor="#CC9900" GroupingText="Pizza Information" Height="100%" Width="450px">
                         <table class="auto-style3">
                             <tr>
                                 <td class="auto-style10">
-                                    <%-- Comment on ASP--%>
                                     <asp:Label ID="lblCustomer" runat="server" AccessKey="c" Text="Customer" AssociatedControlID="txtCustomer"></asp:Label>
                                 </td>
                                 <td class="auto-style6">
@@ -94,101 +91,114 @@
                                 </td>
                             </tr>
 
-                            <tr>
+                             <tr>
                                 <td class="auto-style10">
-                                    <%-- Comment on ASP--%>
                                     <asp:Label ID="lblTelephone" runat="server" AccessKey="t" Text="Telephone" AssociatedControlID="txtPhone"></asp:Label>
                                 </td>
                                 <td class="auto-style6">
-                                    <asp:TextBox ID="TxtPhone" runat="server" TextPhone="Phone" CssClass="tecboc" Width="200px"></asp:TextBox>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td class="auto-style10">
-                                    <%-- Real Time action--%>
-                                    <asp:Label ID="lblDelivery" runat="server" Text="To deliver"></asp:Label>
-                                </td>
-                                <td class="auto-style6">
-                                    <asp:CheckBox ID="chkDelivery" runat="server" AutoPostBack="true" OnCheckedChanged="chkDelivery CheckChanged" />
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td class="auto-style4">
-                                    <asp:Label ID="lblAddress" runat="server" Text="Address"></asp:Label>
-                                </td>
-                                <td class="auto-style7">
-                                    <asp:TextBox ID="txtAddress" runat="server" Height="50px" TextMode="Multiline" CssClass="tecboc" Width="200px"></asp:TextBox>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td class="auto-style10">
-                                    <asp:Label ID="lblPizza" runat="server" Text="Pizza"></asp:Label>
-                                </td>
-                                <td class="auto-style7">
-                                    <asp:DropDownList ID="cboPizza" runat="server" CssClass="tecboc" AutoPostBack="true" OnSelectedIndexChanged="cboPizza_SelectedIndexCHanged" Width="200px">
-                                        <asp:ListItem> Select a Pizza</asp:ListItem>
-                                   </asp:DropDownList>
-                                
+                                    <asp:TextBox ID="txtPhone" runat="server" TextMode="Phone" CssClass="tecboc" Width="200px"></asp:TextBox>
                                 </td>
                             </tr>
 
                              <tr>
                                 <td class="auto-style10">
-                                    <asp:Label ID="lblPizzaSize" runat="server" Text="Pizza Size"></asp:Label>
+                                    <asp:Label ID="lblDelivery" runat="server" Text="To deliver"></asp:Label>
                                 </td>
                                 <td class="auto-style6">
-                                    <asp:ListBox ID="lstPizzaSize" runat="server" CssClass="tecboc" AutoPostBack="true" Width="200px" ></asp:ListBox>
-                                
+                                    <asp:CheckBox ID="chkDelivery" runat="server" AutoPostBack="true" onCheckedChanged="chkDelivery_CheckChanged"  />
+                                </td>
+                            </tr>
+
+                             <tr>
+                                <td class="auto-style4">
+                                    <asp:Label ID="lblAddress" runat="server"  Text="Address" ></asp:Label>
+                                </td>
+                                <td class="auto-style7">
+                                    <asp:TextBox ID="txtAddress" runat="server" Height="50px" TextMode="MultiLine" CssClass="tecboc" Width="200px" OnTextChanged="txtAddress_TextChanged"></asp:TextBox>
                                 </td>
                             </tr>
 
                             <tr>
                                 <td class="auto-style10">
-                                    <asp:Label ID="lblToppings" runat="server" Text="Toppings"></asp:Label>
+                                    <asp:Label ID="lblPizza" runat="server"  Text="Pizza" ></asp:Label>
                                 </td>
-                                <td class="auto-style6">
-                                    <asp:CheckBoxList ID="CheckBoxList" runat="server" AutoPostBack="true"></asp:CheckBoxList>
+                                <td class="auto-style7">
+                                    <asp:DropDownList ID="cboPizza" runat="server" CssClass="tecboc" AutoPostBack="true" OnSelectedIndexChanged="cboPizza_SelectedIndexChanged" Width="200px"  >
+                                        <asp:ListItem> Select a Pizza</asp:ListItem>
+                                    </asp:DropDownList>
                                 </td>
                             </tr>
 
+                           <tr>
+                                <td class="auto-style10">
+                                    <asp:Label ID="lblPizzaSize" runat="server"  Text="Pizza Size" ></asp:Label>
+                                </td>
+                                <td class="auto-style6">
+                                    <asp:ListBox ID="lstPizzaSize" runat="server" CssClass="tecboc" AutoPostBack="true"  Width="200px" OnSelectedIndexChanged="lstPizzaSize_SelectedIndexChanged" ></asp:ListBox>
+                                </td>
+                            </tr>
+
+
                             <tr>
                                 <td class="auto-style10">
-                                    <asp:Label ID="lblPizzaCrust" runat="server" Text="Pizza Crust"></asp:Label>
+                                    <asp:Label ID="lblToppings" runat="server"  Text="Toppings" ></asp:Label>
+                                </td>
+                                <td class="auto-style6">
+                                    <asp:CheckBoxList ID="chklstToppings" runat="server" AutoPostBack="true"></asp:CheckBoxList>
+
+                                </td>
+                            </tr>
+
+
+                             <tr>
+                                <td class="auto-style10">
+                                    <asp:Label ID="lblPizzaCrust" runat="server"  Text="Pizza Crust" ></asp:Label>
                                 </td>
                                 <td class="auto-style6">
                                     <asp:RadioButtonList ID="radlstCrust" runat="server" AutoPostBack="true"></asp:RadioButtonList>
-                                  </td>
+
+                                </td>
                             </tr>
 
                         </table>
                         <br />
                         <br />
                         <br />
-                        </asp:Panel>
+                    </asp:Panel>
                 </td>
 
                 <td class="auto-style12">
                     <asp:Panel ID="panPricing" runat="server" GroupingText="Pricing" BackColor="#CC9900" Height="250px" Width="260px" CssClass="auto-style8">
 
-                        <asp:Image ID="imgHurtz" runat="server" CssClass="auto-style15" Height="80px" ImageUrl="~/logo.png"/>
+                        <asp:Image ID="imgHurtz" runat="server" CssClass="auto-style5" Height="80px" Width="110px" ImageUrl="~/logo.png" />
+
+                        <asp:Literal ID="litPricing" runat="server"> </asp:Literal>
+
+                        <asp:Button ID="btnOrderNow" runat="server" Text="Order Now" OnClick="btnOrderNow_Click" />
 
                     </asp:Panel>
+                    <br />
 
+                    <asp:Panel ID="panOrder" runat="server" CssClass="auto-style15" GroupingText="Order Informations" BackColor="#CC9900">
+                         <asp:Literal ID="litOrder" runat="server"> </asp:Literal>
+                    </asp:Panel>
+                </td>
+          </tr>
 
-
-
+            <tr>
+                <td>
+                    &nbsp;
+                    &nbsp;
+                </td>
+                    <td>
+                    &nbsp;
+                    &nbsp;
                 </td>
 
-
-
-
             </tr>
+
         </table>
-
-
+        <br />
     </form>
 </body>
 </html>

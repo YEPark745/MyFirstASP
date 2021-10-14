@@ -60,13 +60,13 @@ namespace MyFirstASP
         protected global::System.Web.UI.WebControls.Label lblTelephone;
 
         /// <summary>
-        /// TxtPhone control.
+        /// txtPhone control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtPhone;
+        protected global::System.Web.UI.WebControls.TextBox txtPhone;
 
         /// <summary>
         /// lblDelivery control.
@@ -150,13 +150,13 @@ namespace MyFirstASP
         protected global::System.Web.UI.WebControls.Label lblToppings;
 
         /// <summary>
-        /// CheckBoxList control.
+        /// chklstToppings control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList CheckBoxList;
+        protected global::System.Web.UI.WebControls.CheckBoxList chklstToppings;
 
         /// <summary>
         /// lblPizzaCrust control.
@@ -193,5 +193,41 @@ namespace MyFirstASP
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image imgHurtz;
+
+        /// <summary>
+        /// litPricing control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal litPricing;
+
+        /// <summary>
+        /// btnOrderNow control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnOrderNow;
+
+        /// <summary>
+        /// panOrder control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel panOrder;
+
+        /// <summary>
+        /// litOrder control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal litOrder;
     }
 }
